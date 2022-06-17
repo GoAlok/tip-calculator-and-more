@@ -17,7 +17,10 @@ split_into = int(input("In how many person you want to split the bill into: "))
 
 # Calculations
 total_bill = round(bill + ((bill * tip)/100), 2)
+total_bill = "{:.2f}".format(total_bill)
 per_person = round((total_bill / split_into) , 2)
+per_person = "{:.2f}".format(per_person)
+
 
 # Result
 msg = f"Your total amount is ₹{total_bill}, and each person have to pay ₹{per_person}"
